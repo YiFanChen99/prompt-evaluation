@@ -12,7 +12,8 @@ def ArgsParser():
     return parser.parse_args()
 
 args = ArgsParser()
-inputData = Readers.GetFormatReader(args.format)(args.input).GetListData()
+reader = Readers.GetFormatReader(args.format)(args.input)
+inputData = reader.GetListData()
 allResult = {}
 
 for metric in args.metric:
@@ -20,7 +21,7 @@ for metric in args.metric:
     result = evaluator.evaluate(inputData)
     allResult[metric] = result
 
-print(allResult)
+reader.WriteData(allResult, args.output)
 
 
 

@@ -17,6 +17,10 @@ class JsonReader:
     
     def GetIndexedData(self, index: int):
         return self.Data[index]
+    
+    def WriteData(self, data: dict, path: str):
+        with open(path, "w") as f:
+            f.write(json.dumps(data, indent=4))
 
 if __name__ == "__main__":
     tmp = JsonReader("./Testcase/test.json")

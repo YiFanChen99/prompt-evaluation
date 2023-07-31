@@ -1,6 +1,6 @@
 """ Module for parsing command line argument """
 import argparse
-from Metrics.metrics import Metric
+from Metrics.load_metrics import Metric
 from Readers.readers import Readers
 
 def args_parser():
@@ -12,7 +12,7 @@ def args_parser():
         "-m",
         "--metric",
         type = str,
-        nargs = "+",
+        nargs = "*",
         choices = Metric.get_metrics_list()
     )
     parser.add_argument(
@@ -22,17 +22,33 @@ def args_parser():
         choices = Readers.get_reader_list(),
         default="json"
     )
+    parser.add_argument(
+        "-llm",
+        "--LargeLanguageModel",
+        type = str,
+        nargs = 2,
+        metavar = Metric.get_llm_list(),
+    )
 
     return parser.parse_args()
 
 args = args_parser()
 reader = Readers.get_format_reader(args.format)(args.input)
-inputData = reader.get_list_data()
+input_data = reader.get_list_data()
 allResult = {}
 
-for metric in args.metric:
-    evaluator = Metric.get_metric_calculator(metric)()
-    result = evaluator.evaluate(inputData)
-    allResult[metric] = result
+if args.metric:
+    for metric in args.metric:
+        evaluator = Metric.get_metric_calculator(metric)
+        result = evaluator.evaluate(input_data)
+        allResult[metric] = result
+
+
+if args.LargeLanguageModel:
+    model_name = args.LargeLanguageModel[0]
+    path_to_prompt = args.LargeLanguageModel[1]
+    prompt_data = Readers.get_format_reader(args.format)(path_to_prompt).get_list_data()
+    model = Metric.get_llm_evaluator(model_name)
+    allResult[model_name] = model.evaluate(input_data, prompt_data)
 
 reader.write_data(allResult, args.output)

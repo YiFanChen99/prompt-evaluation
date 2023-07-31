@@ -1,4 +1,4 @@
-""" Package supporting calculate rouge score in Chinese/English"""
+""" This module is used for calculating rouge score of input data """
 from sumeval.metrics.rouge import RougeCalculator
 
 class Rouge:
@@ -55,4 +55,3 @@ class RougeL(Rouge):
                     )
             for data in input_data
         ]
-    

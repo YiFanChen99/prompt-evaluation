@@ -2,7 +2,7 @@
 import json
 
 class JsonReader:
-    """ 
+    """
         Reader for json format file.
         Reference's key name is "reference"
         Prediction's key name is "prediction"
@@ -14,9 +14,10 @@ class JsonReader:
                 raw_data = [raw_data]
         self.data = []
         for data in raw_data:
-            if len(data) != 2:
-                raise SyntaxError("Input format error")
-            self.data.append([data["reference"], data["prediction"]])
+            if "reference" in data.keys() and "prediction" in data.keys():
+                self.data.append([data["reference"], data["prediction"]])
+            else:
+                self.data.append(list(data.values()))
 
     def get_list_data(self):
         """
@@ -39,7 +40,7 @@ class JsonReader:
             Write $data to $path in json format
         """
         with open(path, "w", encoding="UTF-8") as file:
-            file.write(json.dumps(data, indent=4))
+            file.write(json.dumps(data, indent=4, ensure_ascii=False))
 
 if __name__ == "__main__":
     tmp = JsonReader("./Testcase/test.json")

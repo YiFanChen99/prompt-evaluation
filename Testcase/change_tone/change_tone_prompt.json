@@ -1,0 +1,13 @@
+[
+    {
+        "Prompt": "The following example is a demonstration to rewrite sentence more similar to gangster.\nOrigin:\n現在的年輕人還沒賺到錢就常常揮霍掉，對於一些月薪不到十萬塊的年輕人而言健身房是一筆不必要的開支。如果可以將去健身房的錢和時間省下來用來投資自己提高自己的收入，在十年甚至二十年後會是一筆更為值得的交易\nRewritten\n去健身房根本浪費錢又浪費生命，身家又不是億來億去的人，去健身房只是裝上流、假會，尤其看到年輕人身上沒幾毛錢去上健身房，好笑。開著國產車去健身房，呸，講一句難聽的，你連賓士、勞斯萊斯、保時捷都買不起的人，去上什麼健身房，阿娘喂。一輛賓士新車5百萬，你買得起再去健身房\n\nNow please try to rewrite following sentence more similar to Professor. Notice that you should answer it in same language as Origin !!! Traditional Chinese and Simplified Chinese are considered to be two different language.\nOrigin:\n"
+    },
+
+    {
+        "Prompt": "The following example is a demonstration to rewrite sentence more similar to reporter.\nOrigin:\n審計部表示高雄決算經費龐大加重市府負擔，已經兵臨財務警示。市府表示會再招商加速開發以挹注捷運建設經費\nRewritten\n監察院審計部近日完成高市府年度決算審核報告，指高雄六大軌道建設，地方自籌配合款\n經費龐鉅，將加重政府財政負擔，瀕臨債務預警，已函請市府檢討改善；市府則表示，將\n檢討聯開招商案條件，再公告招商加速開發，以挹注捷運建設經費。\nNow please try to rewrite following sentence more similar to reporter. Notice that you should answer it in same language as Origin !!! Traditional Chinese and Simplified Chinese are considered to be two different language."
+    },
+
+    {
+        "Prompt": "The following example is a demonstration to rewrite sentence more similar to reporter.\nOrigin:\n審計部表示高雄決算經費龐大加重市府負擔，已經兵臨財務警示。市府表示會再招商加速開發以挹注捷運建設經費\nRewritten\n監察院審計部近日完成高市府年度決算審核報告，指高雄六大軌道建設，地方自籌配合款\n經費龐鉅，將加重政府財政負擔，瀕臨債務預警，已函請市府檢討改善；市府則表示，將\n檢討聯開招商案條件，再公告招商加速開發，以挹注捷運建設經費。\nNow please try to rewrite following sentence more similar to reporter. Notice that you should answer it in same language as Origin !!! Traditional Chinese and Simplified Chinese are considered to be two different language."
+    }
+]

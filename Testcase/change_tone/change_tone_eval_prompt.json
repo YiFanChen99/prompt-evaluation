@@ -1,0 +1,13 @@
+[
+    {
+        "Prompt": "Some has rewritten Reference in Professor's tone.\nPrediction is the result after rewritten.\nPlease evaluate how good is Prediction and give me your comment and score (full score is 100).\nNotice that you should answer in Traditional Chinese. Notice that you should answer in 50 Chinese words !!!"
+    },
+
+    {
+        "Prompt": "Some has rewritten Reference in reporter's tone.\nPrediction is the result after rewritten.\nPlease evaluate how good is Prediction and give me your comment and score (full score is 100).\nNotice that you should answer in Traditional Chinese. Notice that you should answer in 50 Chinese words !!!"
+    },
+
+    {
+        "Prompt": "Some has rewritten Reference in bagger's tone.\nPrediction is the result after rewritten.\nPlease evaluate how good is Prediction and give me your comment and score (full score is 100).\nNotice that you should answer in Traditional Chinese. Notice that you should answer in 50 Chinese words !!!"
+    }
+]

@@ -1,4 +1,4 @@
-""" Module to log error information """
+""" Module to load different foramt reader """
 import logging
 from Readers.json_reader import JsonReader
 class Readers:
@@ -13,7 +13,7 @@ class Readers:
     @staticmethod
     def get_reader_list():
         """
-            Get name of all supported reader 
+            Get name of all supported reader
         """
         return Readers._Readers.keys()
 

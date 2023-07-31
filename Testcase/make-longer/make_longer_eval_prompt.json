@@ -1,0 +1,17 @@
+[
+    {
+        "Prompt": "Prediction is the longer version of Reference.\nBoth of them are talking about same thing.\nPlease evaluate how good does Prediction did in longer Reference. \nPlease  give me your comment and score (full score is 100).\nNotice that you should answer in Traditional Chinese. Notice that you should answer in 50 Chinese words !!!"
+    },
+
+    {
+        "Prompt": "Prediction is the longer version of Reference.\nBoth of them are talking about same thing.\nPlease evaluate how good does Prediction did in longer Reference. \nPlease  give me your comment and score (full score is 100).\nNotice that you should answer in Traditional Chinese. Notice that you should answer in 50 Chinese words !!!"
+    },
+
+    {
+        "Prompt": "Prediction is the longer version of Reference.\nBoth of them are talking about same thing.\nPlease evaluate how good does Prediction did in longer Reference. \nPlease  give me your comment and score (full score is 100).\nNotice that you should answer in Traditional Chinese. Notice that you should answer in 50 Chinese words !!!"
+    },
+
+    {
+        "Prompt": "Prediction is the longer version of Reference.\nBoth of them are talking about same thing.\nPlease evaluate how good does Prediction did in longer Reference. \nPlease  give me your comment and score (full score is 100).\nNotice that you should answer in Traditional Chinese. Notice that you should answer in 50 Chinese words !!!"
+    }
+]
